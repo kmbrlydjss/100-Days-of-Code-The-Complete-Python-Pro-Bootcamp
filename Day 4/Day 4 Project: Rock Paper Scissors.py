@@ -45,7 +45,7 @@ elif user == 0 and computer == 1:
     print("You lose!")
 elif user == 1 and computer == 0:
     print("You win!")
-elif  user == 1 and computer == 2:
+elif user == 1 and computer == 2:
     print("You lose!")
 elif user == 2 and computer == 1:
     print("You win!")
