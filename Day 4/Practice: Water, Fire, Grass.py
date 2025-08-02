@@ -38,7 +38,6 @@ print(game_image[computer])
 
 if user >= 3 or user < 0:
     print("You typed a wrong number. You lose!")
-
 elif user == computer:
     print("It's a Draw")
 elif user == 0 and computer == 1:
