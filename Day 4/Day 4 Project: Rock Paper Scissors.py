@@ -34,18 +34,22 @@ if user >= 0 and user <= 2:
     print(game_image[user])
 
 computer = random.randint(0, 2)
-print(f"Computer chose: ")
+print("Computer chose: ")
 print(game_image[computer])
 
 if user >= 3 or user < 0:
     print("You typed a wrong number. You lose!")
+elif user == computer:
+    print("It's a Draw")
+elif user == 0 and computer == 1:
+    print("You lose!")
+elif user == 1 and computer == 0:
+    print("You win!")
+elif  user == 1 and computer == 2:
+    print("You lose!")
+elif user == 2 and computer == 1:
+    print("You win!")
+elif user == 2 and computer == 0:
+    print("You lose!")
 elif user == 0 and computer == 2:
     print("You win!")
-elif computer == 0 and user == 2:
-    print("You lose!")
-elif computer > user:
-    print("You lose!")
-elif computer < user:
-    print("You win!")
-elif user == computer:
-    print("Draw")
